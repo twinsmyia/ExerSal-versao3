@@ -1,0 +1,53 @@
+.Turma {
+  position: relative;
+}
+
+.Turma #notification {
+  top: -50px;
+}
+
+.Turma h6 {
+  font-weight: 600;
+  text-align: left;
+}
+
+.Turma .cabecalho {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.Turma .botao-nova-turma {
+  border-radius: 5px;
+  background: #253B9D;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+
+.Turma .botao-voltar {
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #253B9D;
+  border: 1px solid #253B9D;
+  float: left;
+  margin-left: 20px;
+}
+
+.Turma .botao-apagar {
+  position: absolute;
+  right: 130px;
+  top: 16px;
+  border-radius: 5px;
+  background: #ec0f24;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  border: none;
+}

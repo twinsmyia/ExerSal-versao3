@@ -1,0 +1,61 @@
+.FormTurma {
+  position: relative;
+  padding: 20px;
+}
+
+.FormTurma form {
+  position: relative;
+}
+
+.FormTurma #notification {
+  top: -120px !important;
+}
+
+.FormTurma form .botao-cadastro {
+  position: absolute;
+  right: 0;
+  top: -72px;
+
+  border-radius: 5px;
+  background: #253B9D;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.FormTurma form .form-coluna {
+  display: flex;
+}
+
+.FormTurma form .form-coluna .form-coluna-1 {
+  width: calc(100% - 20px);
+  margin-right: 20px;
+}
+
+.FormTurma form .form-coluna .form-coluna-2 {
+  width: calc(100% - 20px);
+  margin-left: 20px;
+}
+
+.FormTurma form .form-coluna .field {
+  text-align: left;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.FormTurma form .form-coluna .field .form-label {
+  font-size: 11px;
+  margin-bottom: 0.1rem;
+}
+
+.FormTurma form .form-coluna .field .form-control {
+  font-size: 14px;
+}
+
+.FormTurma form .form-coluna .field span.error {
+  color: red;
+  font-size: 10px;
+}

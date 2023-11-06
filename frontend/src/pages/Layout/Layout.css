@@ -1,0 +1,9 @@
+.Layout {
+  display: flex;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+.conteudo { 
+  width: calc(100vw - 200px);
+}

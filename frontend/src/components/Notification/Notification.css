@@ -1,0 +1,25 @@
+#notification {
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    width: calc(100% - 40px);
+    text-align: center;
+    margin: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px;
+}
+
+#notification p {
+    margin: 0;
+}
+
+#notification.alert-warning {
+    color: #d22031;
+    background-color: #ec0f2412;
+}
+
+#notification.alert-success {
+    color: #198754;
+    background-color: #1987540f;
+}
