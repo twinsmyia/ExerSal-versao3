@@ -27,7 +27,8 @@
     "patch-package": "^8.0.0",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.6",
-    "supertest": "^6.3.3"
+    "supertest": "^6.3.3",
+    "cors": "^2.8.5"
   },
   "type": "module",
   "devDependencies": {
