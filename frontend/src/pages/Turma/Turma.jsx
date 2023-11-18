@@ -26,7 +26,7 @@ function Turma() {
       .then((response) => response.data)
       .then((data) => {
         data = data.map((item) => {
-          item.descricao = item.descricao.replaceAll("\n", "<br>");
+          item.descricao = item.descricao?.replaceAll("\n", "<br>");
           item.horarios = item.horarios.replaceAll("\n", "<br>");
           return item;
         });

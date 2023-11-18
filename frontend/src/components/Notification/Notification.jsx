@@ -9,7 +9,7 @@ const Notification = ({props}) => {
 
     useEffect(() => {
         if(alert.show){
-            const timer = setTimeout(() => setAlert({'show': false, 'message': '', 'variant': ''}), 1000000);
+            const timer = setTimeout(() => setAlert({'show': false, 'message': '', 'variant': ''}), 10000);
             
             return () => {
                 clearTimeout(timer);

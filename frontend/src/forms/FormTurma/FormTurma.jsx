@@ -25,7 +25,7 @@ const FormTurma = ({ indiceTurma, consultarTurma }) => {
   useEffect(() => {
     setDiaAtual(formataDataHoje());
 
-    if (indiceTurma) {
+    if (indiceTurma != null) {
       setformEdicao(true);
       consultar();
     }
@@ -59,6 +59,7 @@ const FormTurma = ({ indiceTurma, consultarTurma }) => {
       .then((response) => {
         const {data} = response;
         data.data_de_fechamento = formataData(data.data_de_fechamento);
+
         setFormData({...data});
         setTurma({...data});
       })
@@ -105,16 +106,20 @@ const FormTurma = ({ indiceTurma, consultarTurma }) => {
 
         setformEdicao(true);
         setTurma(data);
-        consultarTurma(data.id);
-        indiceTurma = data.id;
+        consultarTurma(data.content.id);
+        indiceTurma = data.content.id;
       })
       .catch((err) => {
-        const message = err?.response?.data?.message;
+        const message = err?.response?.data;
         setAlert({'show': true, 'message': message, 'variant': 'danger'})
       });
   }
 
   function editar(body) {
+    delete body?.created_at;
+    delete body?.updated_at;
+    delete body?.id;
+
     api
       .patch(`/turma/${turma.id}`, body)
       .then((response) => {

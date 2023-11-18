@@ -7,10 +7,7 @@
     "start": "nodemon server.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
-    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --coverage",
-    "test:turma:service": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=backend/test/turma.test.js",
-    "test:turma:rota": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=backend/test/rota.test.js",
-    "test:turma:db": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=backend/test/db.test.js"
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --coverage"
   },
   "author": "",
   "license": "ISC",
