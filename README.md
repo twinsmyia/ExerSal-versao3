@@ -4,7 +4,6 @@
 <hr style="height: 3px"/>
 <br>
 <h3><b>Backend</b></h3>
-<hr style="height: 0.1px; margin: 0 0; margin-top: -4px"/>
 </br>
 
 Acessar a pasta do backend </br>
@@ -18,7 +17,6 @@ Executar o projeto </br>
 
 <br>
 <h3><b>Frontend</b></h3>
-<hr style="height: 0.1px; margin: 0 0; margin-top: -4px"/>
 <br>
 
 Acessar a pasta do frontend </br>
